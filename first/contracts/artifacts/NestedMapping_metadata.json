@@ -1,0 +1,111 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "addr2",
+						"type": "address"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "addr2",
+						"type": "address"
+					}
+				],
+				"name": "remove",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "addr2",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "u",
+						"type": "uint256"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/_12NestedMapping.sol": "NestedMapping"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/_12NestedMapping.sol": {
+			"keccak256": "0x42d3eeb38c0252aba36823e3f7f4b50a525da4c9f26608ac1d75c2c68f6baebf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9e43fa3f82137cf3cd314cfd2298b95e3f262094a2954c107ac89fbdb25c6c4b",
+				"dweb:/ipfs/QmPGXN5z3UchxUz9tHoBshdRGLVUPftouMikiTRicKnH6f"
+			]
+		}
+	},
+	"version": 1
+}

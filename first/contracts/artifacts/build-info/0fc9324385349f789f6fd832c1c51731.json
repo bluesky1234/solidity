@@ -1,0 +1,84 @@
+{
+	"id": "0fc9324385349f789f6fd832c1c51731",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/_18Transient.sol": {
+				"content": "// pragma solidity ^0.8.24;\n\n// // Make sure EVM version and VM set to Cancun\n\n// // Storage - data is stored on the blockchain\n// // Memory - data is cleared out after a function call\n// // Transient storage - data is cleared out after a transaction\n\n// interface ITest {\n//     function val() external view returns (uint256);\n//     function test() external;\n// }\n\n// contract Callback {\n//     uint256 public val;\n\n//     fallback() external {\n//         val = ITest(msg.sender).val();\n//     }\n\n//     function test(address target) external {\n//         ITest(target).test();\n//     }\n// }\n\n// contract TestStorage {\n//     uint256 public val;\n\n//     function test() public {\n//         val = 123;\n//         bytes memory b = \"\";\n//         msg.sender.call(b);\n//     }\n// }\n\n// contract TestTransientStorage {\n//     bytes32 constant SLOT = 0;\n\n//     function test() public {\n//         assembly {\n//             tstore(SLOT, 321)\n//         }\n//         bytes memory b = \"\";\n//         msg.sender.call(b);\n//     }\n\n//     function val() public view returns (uint256 v) {\n//         assembly {\n//             v := tload(SLOT)\n//         }\n//     }\n// }\n\n// contract ReentrancyGuard {\n//     bool private locked;\n\n//     modifier lock() {\n//         require(!locked);\n//         locked = true;\n//         _;\n//         locked = false;\n//     }\n\n//     // 35313 gas\n//     function test() public lock {\n//         // Ignore call error\n//         bytes memory b = \"\";\n//         msg.sender.call(b);\n//     }\n// }\n\n// contract ReentrancyGuardTransient {\n//     bytes32 constant SLOT = 0;\n\n//     modifier lock() {\n//         assembly {\n//             if tload(SLOT) { revert(0, 0) }\n//             tstore(SLOT, 1)\n//         }\n//         _;\n//         assembly {\n//             tstore(SLOT, 0)\n//         }\n//     }\n\n//     // 21887 gas\n//     function test() external lock {\n//         // Ignore call error\n//         bytes memory b = \"\";\n//         msg.sender.call(b);\n//     }\n// }"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/_18Transient.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/_18Transient.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.26;\"\n--> contracts/_18Transient.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.26;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/_18Transient.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/_18Transient.sol": {
+				"ast": {
+					"absolutePath": "contracts/_18Transient.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "1988:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

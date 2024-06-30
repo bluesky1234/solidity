@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "zeroCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BoolShortCiruit.sol": "BoolShortCircuit"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BoolShortCiruit.sol": {
+			"keccak256": "0x17cd6e361b6a1cf1ae7322eff0a9dd826074e8ff6175b06059527c1dd0eed66f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4182814b0cd30d643e1024cf46b61ea211deae4122ef99f06c16a09879225c29",
+				"dweb:/ipfs/QmUfFUntgMZetVizcZbUAJ2dRgWwFVwvFtrRzex81EyHLR"
+			]
+		}
+	},
+	"version": 1
+}

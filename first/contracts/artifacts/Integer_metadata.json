@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwn",
+						"type": "address"
+					}
+				],
+				"name": "overflow",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Integer.sol": "Integer"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Integer.sol": {
+			"keccak256": "0x84447dcb8c35c3d1dcecee458117551ae8d81fbffb5d9bb5a132d555625fc3e4",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ef786b2d0bac842aa3c631362488b6e25e52ed61b50ce2478f16e7947ceb7fda",
+				"dweb:/ipfs/QmacYDfm7RhSPyiiSX4grU5nrouRJUz5nV5f6nHrp6pYiB"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "boolean uint256 int256 address*",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Primitives.sol": "Primitives"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Primitives.sol": {
+			"keccak256": "0x46519c83e6add79885bcdd7250bf134c26d828a4c37783fc720893c13afab59e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://23352c664251ab81f54a1d1b1905fee79027ec06ea5773f7fb6041cdc3fddc2f",
+				"dweb:/ipfs/Qmf2uyctfSA3cX6nRFzotkUQnghyJU2JTCdhtExSrwA3E9"
+			]
+		}
+	},
+	"version": 1
+}
